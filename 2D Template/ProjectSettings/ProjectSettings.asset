@@ -733,11 +733,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: d316b0b4-8fe3-4d5c-934f-73871f596b0d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: 2D Template
+  organizationId: sliftstar
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
