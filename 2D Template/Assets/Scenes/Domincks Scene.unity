@@ -10639,6 +10639,7 @@ MonoBehaviour:
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
+  enemiesPerSecondCap: 15
 --- !u!4 &1519160124
 Transform:
   m_ObjectHideFlags: 0
@@ -10706,6 +10707,7 @@ MonoBehaviour:
   - {fileID: 1079789565}
   - {fileID: 1734730754}
   - {fileID: 657291696}
+  currency: 0
 --- !u!1 &1534607021
 GameObject:
   m_ObjectHideFlags: 0
