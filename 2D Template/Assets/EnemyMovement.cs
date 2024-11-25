@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
         target = LevelManager.main.path[pathIndex];
     }
 
-    private void Uodate()
+    private void Update()
     {
         if (Vector2.Distance(target.position, transform.position) <= 0.1f)
         {
@@ -26,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex == LevelManager.main.path.Length)
             {
+                EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
