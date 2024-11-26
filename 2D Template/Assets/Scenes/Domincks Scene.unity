@@ -6141,11 +6141,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &886933262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996490954200924012, guid: c88f90e25e037474ba7c832b830572d6, type: 3}
+  m_PrefabInstance: {fileID: 5996490955104006038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &886933267 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5996490954200924010, guid: c88f90e25e037474ba7c832b830572d6, type: 3}
   m_PrefabInstance: {fileID: 5996490955104006038}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &886933268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886933262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad684c4ea6f0dd45b9ba4be04bc66e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 2
+  currencyWorth: 50
 --- !u!1 &901524332
 GameObject:
   m_ObjectHideFlags: 0
@@ -10635,8 +10654,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 5996490954200924012, guid: c88f90e25e037474ba7c832b830572d6, type: 3}
+  - {fileID: 886933262}
+  - {fileID: 5996490954200924012, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   baseEnemies: 8
-  enemiesPerSecond: 0.5
+  enemiesPerSecond: 1
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
   enemiesPerSecondCap: 15
