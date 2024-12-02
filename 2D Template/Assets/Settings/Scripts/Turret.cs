@@ -9,6 +9,8 @@ public class Turret : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
@@ -18,13 +20,9 @@ public class Turret : MonoBehaviour
         if (target == null)
         {
             FindTarget();
+            return;
         }
-        {
-            { }
-             
-        } 
-
-
+        RotateTowardsTarget();
     }
     private void FindTarget()
     {
@@ -34,7 +32,7 @@ public class Turret : MonoBehaviour
         {
             target = hits[0].transform;
         }
-);
+)
     }
     private void OnDrawGizmosSelected()
     {
