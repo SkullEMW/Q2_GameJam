@@ -16,9 +16,9 @@ public class Turret : MonoBehaviour
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
-    [SerializeField] private float rotationSpeed
+    [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; // Bullets Per Second
-
+    
     private Transform target;
     private float timeUntilFire;
 
@@ -28,7 +28,7 @@ public class Turret : MonoBehaviour
         {
                 FindTarget();
                 return;
-            }
+        }
        
             RotateTowardsTarget();
 
@@ -90,7 +90,7 @@ public class Turret : MonoBehaviour
 
 
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        turretRotationPoint.rotation = targetRotation;
+        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     private void OnDrawGizmosSelected()
     {
