@@ -28614,6 +28614,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turrets
       objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560498, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560498, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560498, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560498, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560498, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926970560499, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
