@@ -16,11 +16,7 @@ public class Turret : MonoBehaviour
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
-<<<<<<< HEAD
-    [SerializeField] private float rotationSpeed;
-=======
     [SerializeField] private float rotationSpeed = 5f;
->>>>>>> f484bb55a1789b70b12a5896f92be1c95445553d
     [SerializeField] private float bps = 1f; // Bullets Per Second
     
     private Transform target;
@@ -68,9 +64,7 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
-        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
-        bulletScript.SetTarget(target);
+        Debug.Log("Shoot");
     }
     //private void FindTarget() {
 
