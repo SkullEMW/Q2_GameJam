@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using System;
 using System.Runtime.CompilerServices;
+using System.Linq;
 
 public class Turret : MonoBehaviour
 {
@@ -19,72 +20,52 @@ public class Turret : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f; // Bullets Per Second
     
-    private Transform target;
+    private List<Transform> targets = new();
     private float timeUntilFire;
 
     private void Update()
     {
-        if (target == null)
-        {
-                FindTarget();
-                return;
-        }
-       
-            RotateTowardsTarget();
+        FindTargets();  
+        Transform Target = GetClosestTarget();
 
-            if (!CheckTargetIsInRange())
-            {
-                target = null;
-            }
-            else
-            {
+        if (Target)
+        {
+            RotateTowardsTarget(Target);
             timeUntilFire += Time.deltaTime;
 
-                 if (timeUntilFire >= 1f / bps)
-                 {
-                     Shoot();
-                     timeUntilFire = 0f;
-                 }
+            if (timeUntilFire >= 1f / bps)
+            {
+                Shoot(Target);
+                timeUntilFire = 0f;
             }
-    
-
-
-        CheckTargetIsinRange();
-        if (CheckTargetIsInRange())
-        {
-            target = null;
-        } 
-        
+        }
     }
 
-    private bool CheckTargetIsInRange()
+    private void Shoot(Transform target)
     {
-        return Vector2.Distance(transform.position,target.transform.position)<targetingRange;
-    }
-
-    private void Shoot()
-    {
-        Debug.Log("Shoot");
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        bulletScript.SetTarget(target);
     }
     //private void FindTarget() {
 
+    private Transform GetClosestTarget()
+    {
+        return targets.OrderBy(item => Vector2.Distance(transform.position, item.position)).FirstOrDefault();
+    }
       
-    private void FindTarget()
+    private void FindTargets()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)transform.position, 0f, enemyMask);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, Vector2.zero, 999f, enemyMask);
 
-        if (hits.Length > 0)
+        targets.Clear();
+        foreach (RaycastHit2D hit in hits)
         {
-            target = hits[0].transform;
+            targets.Add(hit.transform);
         }
-
-    }
-    private bool CheckTargetIsinRange()
-    {
-    return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
 
-    private void RotateTowardsTarget()
+    private void RotateTowardsTarget(Transform target)
     {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
@@ -92,7 +73,8 @@ public class Turret : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    private void OnDrawGizmosSelected()
+
+    private void OnDrawGizmos()
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
