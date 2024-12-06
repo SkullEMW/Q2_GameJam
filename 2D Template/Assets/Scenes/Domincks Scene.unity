@@ -14489,6 +14489,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turrets
       objectReference: {fileID: 0}
+    - target: {fileID: 6829231926767857471, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: bps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829231926767857471, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: targetingRange
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
