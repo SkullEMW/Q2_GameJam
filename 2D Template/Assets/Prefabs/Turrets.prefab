@@ -85,7 +85,7 @@ MonoBehaviour:
   firingPoint: {fileID: 1804379075776250609}
   targetingRange: 3
   rotationSpeed: 200
-  bps: 1
+  bps: 1.4
 --- !u!1 &6829231926970560497
 GameObject:
   m_ObjectHideFlags: 0
