@@ -31,7 +31,7 @@ public class Plot : MonoBehaviour
         if (tower != null) return;
 
         GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-        tower = Instantiate(tower, transform.position, Quaternion.identity);
+        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
     }
     
     
