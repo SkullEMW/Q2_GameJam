@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02a086a70c57851438f87ec13bc1dfde
+guid: 1805c9783cf47974996aa3102711fe18
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PurpleAttackSpriteSheet_0
+      name: PurpleAttackSpriteSheet (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08f265e54bbb83845b8fa26e3968c075
-      internalID: -647925042
+      spriteID: ad1f927f2294a8a43a8a5e9e073544f7
+      internalID: 449160263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PurpleAttackSpriteSheet_1
+      name: PurpleAttackSpriteSheet (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a01912e30a065540b17d5906892f84f
-      internalID: 211612725
+      spriteID: d32ece020a8eccf4db102cd10f290a46
+      internalID: 402362632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PurpleAttackSpriteSheet_2
+      name: PurpleAttackSpriteSheet (1)_2
       rect:
         serializedVersion: 2
         x: 128
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ece3eab45fdc1740892a0f7ac3f821c
-      internalID: 1518303361
+      spriteID: a775b02c425d3a942bc1b902a71422f5
+      internalID: 1058931910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PurpleAttackSpriteSheet_3
+      name: PurpleAttackSpriteSheet (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbee0a09b70c9b47ab31aa177ff79c2
-      internalID: -1678841221
+      spriteID: ddb98860acc7c764c86901f7fe740834
+      internalID: 904681328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PurpleAttackSpriteSheet_4
+      name: PurpleAttackSpriteSheet (1)_4
       rect:
         serializedVersion: 2
         x: 64
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12f0f1ce8d30cf5429e0c9bd477a7ef4
-      internalID: -266291981
+      spriteID: 2f47ddd5a5f99fa49aa7d6316857b653
+      internalID: 1595853859
       vertices: []
       indices: 
       edges: []
@@ -246,11 +246,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PurpleAttackSpriteSheet_0: -647925042
-      PurpleAttackSpriteSheet_4: -266291981
-      PurpleAttackSpriteSheet_2: 1518303361
-      PurpleAttackSpriteSheet_1: 211612725
-      PurpleAttackSpriteSheet_3: -1678841221
+      PurpleAttackSpriteSheet (1)_3: 904681328
+      PurpleAttackSpriteSheet (1)_1: 402362632
+      PurpleAttackSpriteSheet (1)_2: 1058931910
+      PurpleAttackSpriteSheet (1)_4: 1595853859
+      PurpleAttackSpriteSheet (1)_0: 449160263
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -10707,6 +10707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turrets
       objectReference: {fileID: 0}
+    - target: {fileID: 6829231926767857471, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
+      propertyPath: bps
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6829231926970560499, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -12068,12 +12072,12 @@ SpriteRenderer:
   m_SortingLayerID: -1513101919
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1478439543, guid: c751f574327ef37479a1635e898e128f, type: 3}
+  m_Sprite: {fileID: 5602582, guid: a9515cb0acf6c054bb0476fc6336c6d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

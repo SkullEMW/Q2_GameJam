@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c751f574327ef37479a1635e898e128f
+guid: 0451120b7c87ed44ab679106f4de4ca9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueAttackSpriteSheet_0
+      name: BlueAttackSpriteSheet (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d256b0ef594f5934db06228fa206a19b
-      internalID: 1478439543
+      spriteID: 9f1a46c146087f04c8e94a0621641ea1
+      internalID: 550514655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttackSpriteSheet_1
+      name: BlueAttackSpriteSheet (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d51d5cad8cc0cf847a886425cfda69ec
-      internalID: -127703122
+      spriteID: c89073feacb7b6240b395ee3f0f9adf3
+      internalID: 1826640537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttackSpriteSheet_2
+      name: BlueAttackSpriteSheet (1)_2
       rect:
         serializedVersion: 2
         x: 128
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7ce727bc292ae439400df40d3cdb9f
-      internalID: 727284466
+      spriteID: cf11fc3df02a50b409f5ee0484c0cb68
+      internalID: 320724803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttackSpriteSheet_3
+      name: BlueAttackSpriteSheet (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 520850249ab03fc4c9b3c5025d2cb143
-      internalID: 381359345
+      spriteID: 015114487ca9f3a41960877495c3284d
+      internalID: 82336171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueAttackSpriteSheet_4
+      name: BlueAttackSpriteSheet (1)_4
       rect:
         serializedVersion: 2
         x: 64
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03fa4c3a6fc43c1438aac5763e711805
-      internalID: -1083276662
+      spriteID: cba5ac132c0fe2246ae00eddf515b83c
+      internalID: 2128827983
       vertices: []
       indices: 
       edges: []
@@ -246,11 +246,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueAttackSpriteSheet_4: -1083276662
-      BlueAttackSpriteSheet_1: -127703122
-      BlueAttackSpriteSheet_2: 727284466
-      BlueAttackSpriteSheet_0: 1478439543
-      BlueAttackSpriteSheet_3: 381359345
+      BlueAttackSpriteSheet (1)_2: 320724803
+      BlueAttackSpriteSheet (1)_4: 2128827983
+      BlueAttackSpriteSheet (1)_0: 550514655
+      BlueAttackSpriteSheet (1)_1: 1826640537
+      BlueAttackSpriteSheet (1)_3: 82336171
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
