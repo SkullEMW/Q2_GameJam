@@ -6,6 +6,7 @@ using UnityEditor.Experimental.GraphView;
 using System;
 using System.Runtime.CompilerServices;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class Turret : MonoBehaviour
 {
@@ -22,6 +23,13 @@ public class Turret : MonoBehaviour
     
     private List<Transform> targets = new();
     private float timeUntilFire;
+    private Animator anim;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -46,6 +54,8 @@ public class Turret : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
+
+        anim.SetTrigger("Attack");
     }
     //private void FindTarget() {
 
@@ -79,12 +89,6 @@ public class Turret : MonoBehaviour
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
    
