@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6dd60d2c09a77e4fac8e9aaa5cba74b
+guid: ece2b94b3b26d374196f3957ec2be155
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 110
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,64 +131,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: corners_0
+      name: wierdcornerthing (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 317
-        width: 96
-        height: 67
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ab547e0e09a724abea00c4db5af9ab
-      internalID: 1597400189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: corners_2
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 289
-        width: 64
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5d3615829114724ba099b85b9f5d367
-      internalID: -1976545486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: corners_3
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 310
-        width: 67
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c18a0e059d097854faa21fa81945f9bc
-      internalID: -14169321
+      spriteID: f8950a3d52df7724dbd22f6cfe88931d
+      internalID: -1141233768
       vertices: []
       indices: 
       edges: []
@@ -204,16 +162,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      corners_6: -214047488
-      corners_9: -1511440761
-      corners_2: -1976545486
-      corners_0: 1597400189
-      corners_8: 2080254767
-      corners_4: 106569649
-      corners_1: -2095070066
-      corners_3: -14169321
-      corners_7: -421560608
-      corners_5: -1217323166
+      wierdcornerthing (1)_0: -1141233768
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ec1682947bc852e4c8f4ede3f7db8363
+guid: 5b9c04c4c7cf2864494de5c17b77ec66
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OUTSIDE_0
+      name: INSIDE CORNER AWAY_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 9
+        y: 10
+        width: 13
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fc6d27f1864af74ab04ce8ecf1249df
-      internalID: 233424269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OUTSIDE_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d163c3b122cb4d4ba82d438870db24b
-      internalID: 2027737134
+      spriteID: 344dedbe14e08b14bb775e7ac38b31e7
+      internalID: -535665811
       vertices: []
       indices: 
       edges: []
@@ -183,8 +162,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      OUTSIDE_1: 2027737134
-      OUTSIDE_0: 233424269
+      INSIDE CORNER AWAY_0: -535665811
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
