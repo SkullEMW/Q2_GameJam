@@ -25,7 +25,8 @@ public class Turret : MonoBehaviour
     private List<Transform> targets = new();
     private float timeUntilFire;
     private Animator anim;
-
+    public Sprite BluePlacementSpriteSheet_0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class Turret : MonoBehaviour
     {
         FindTargets();  
         Transform Target = GetClosestTarget();
+        
+
 
         timeUntilFire += Time.deltaTime;
 
