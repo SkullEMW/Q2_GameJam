@@ -13,6 +13,7 @@ public class Turret : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private LayerMask WallMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
 
@@ -24,22 +25,28 @@ public class Turret : MonoBehaviour
     private List<Transform> targets = new();
     private float timeUntilFire;
     private Animator anim;
-
+    public Sprite BluePlacementSpriteSheet_0;
+    
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        timeUntilFire = 1f / bps;
     }
 
     private void Update()
     {
         FindTargets();  
         Transform Target = GetClosestTarget();
+        
+
+
+        timeUntilFire += Time.deltaTime;
 
         if (Target)
         {
             RotateTowardsTarget(Target);
-            timeUntilFire += Time.deltaTime;
+            
 
             if (timeUntilFire >= 1f / bps)
             {
@@ -55,7 +62,10 @@ public class Turret : MonoBehaviour
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
 
-        anim.SetTrigger("Attack");
+        if (anim)
+        {
+            anim.SetTrigger("Attack");
+        }
     }
     //private void FindTarget() {
 
@@ -71,7 +81,10 @@ public class Turret : MonoBehaviour
         targets.Clear();
         foreach (RaycastHit2D hit in hits)
         {
-            targets.Add(hit.transform);
+            if (!Physics2D.Linecast(transform.position,hit.point, WallMask))
+            {
+                targets.Add(hit.transform);
+            }
         }
     }
 
@@ -88,6 +101,7 @@ public class Turret : MonoBehaviour
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+        Gizmos.DrawLine(transform.position, GetClosestTarget().position);
 
     }
 
