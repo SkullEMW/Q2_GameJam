@@ -26,7 +26,8 @@ public class Turret : MonoBehaviour
     private float timeUntilFire;
     private Animator anim;
     public Sprite BluePlacementSpriteSheet_0;
-    
+    private static object onDrawGizmos;
+
     // Start is called before the first frame update
     void Start()
     {
