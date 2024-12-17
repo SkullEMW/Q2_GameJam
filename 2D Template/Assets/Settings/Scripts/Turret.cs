@@ -102,7 +102,9 @@ public class Turret : MonoBehaviour
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-        Gizmos.DrawLine(transform.position, GetClosestTarget().position);
+
+        if (GetClosestTarget())
+            Gizmos.DrawLine(transform.position, GetClosestTarget().position);
 
     }
 
