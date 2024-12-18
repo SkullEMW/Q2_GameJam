@@ -5,6 +5,13 @@ using UnityEngine.Events;
 
 public class EnemySpawner : MonoBehaviour
 {
+    Rigidbody2d rb;
+
+    float inputHorizontal;
+    float inputVertical;
+
+    bool facingRight = true;
+
 
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
@@ -95,4 +102,8 @@ public class EnemySpawner : MonoBehaviour
     {
         return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0f, enemiesPerSecondCap);
     }
+
+
+
+
 }

@@ -10,6 +10,13 @@ using Unity.VisualScripting;
 
 public class Turret : MonoBehaviour
 {
+    Rigidbody2d rb;
+
+    float inputHorizontal;
+    float inputVertical;
+
+    bool facingRight = true;
+    
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
@@ -96,6 +103,14 @@ public class Turret : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        if ((target.position - transform.position).x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     private void OnDrawGizmos()
@@ -107,7 +122,43 @@ public class Turret : MonoBehaviour
             Gizmos.DrawLine(transform.position, GetClosestTarget().position);
 
     }
+    private void FixedUpdate()
+    {
+        
 
-   
-    
+
+
+
+
+    }
+
+
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
+    }
+    public class ExampleClass : MonoBehaviour
+    {
+        public Transform other;
+
+        void Update()
+        {
+            if (other)
+            {
+                Vector3 forward = transform.TransformDirection(Vector3.forward);
+                Vector3 toOther = Vector3.Normalize(other.position - transform.position);
+
+                if (Vector3.Dot(forward, toOther) < 0)
+                {
+                    print("The other transform is behind me!");
+                }
+            }
+        }
+    }
+
+
 }
