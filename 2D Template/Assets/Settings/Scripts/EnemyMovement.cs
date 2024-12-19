@@ -31,6 +31,8 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector2 direction = (LevelManager.main.path[pathIndex].position - transform.position).normalized;
 
-        rb.velocity = direction * moveSpeed;
+        Vector2 dir = (direction * moveSpeed);
+        rb.velocity = new Vector2(Mathf.Clamp(dir.x, -moveSpeed, moveSpeed), Mathf.Clamp(dir.y, -moveSpeed, moveSpeed));
+        print(rb.velocity);
     }
 }
