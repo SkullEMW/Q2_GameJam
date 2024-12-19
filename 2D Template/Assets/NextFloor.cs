@@ -8,12 +8,11 @@ public class NextFloor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //collision.transform.position = nextPoint.position;
-        
+        collision.transform.position = nextPoint.position;
+
+        if (collision.TryGetComponent(out EnemyMovement enemyMovement))
+        {
+            enemyMovement.pathIndex++;
+        }
     }
-
-
-
-
-
 }

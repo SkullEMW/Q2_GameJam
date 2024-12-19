@@ -10,17 +10,11 @@ public class EnemyMovement : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
 
-    private Transform target;
-    private int pathIndex = 0;
-
-    private void Start()
-    {
-        target = LevelManager.main.path[pathIndex];
-    }
+    public int pathIndex = 0;
 
     private void Update()
     {
-        if (Vector2.Distance(target.position, transform.position) <= 0.1f)
+        if (Vector2.Distance(LevelManager.main.path[pathIndex].position, transform.position) <= 0.1f)
         {
             pathIndex++;
 
@@ -30,17 +24,12 @@ public class EnemyMovement : MonoBehaviour
                 Destroy(gameObject);
                 return;
             }
-            else
-            {
-                target = LevelManager.main.path[pathIndex];
-            }
-
         }
     }
 
     private void FixedUpdate()
     {
-        Vector2 direction = (target.position - transform.position).normalized;
+        Vector2 direction = (LevelManager.main.path[pathIndex].position - transform.position).normalized;
 
         rb.velocity = direction * moveSpeed;
     }
