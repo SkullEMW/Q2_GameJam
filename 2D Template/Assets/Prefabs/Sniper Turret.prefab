@@ -89,6 +89,7 @@ MonoBehaviour:
   targetingRange: 6
   rotationSpeed: 200
   bps: 0.5
+  BluePlacementSpriteSheet_0: {fileID: 0}
 --- !u!1 &6829231926970560497
 GameObject:
   m_ObjectHideFlags: 0

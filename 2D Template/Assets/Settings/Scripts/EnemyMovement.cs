@@ -29,10 +29,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 direction = (LevelManager.main.path[pathIndex].position - transform.position).normalized;
+        Vector2 direction = ((Vector2)LevelManager.main.path[pathIndex].position - (Vector2)transform.position).normalized;
 
         Vector2 dir = (direction * moveSpeed);
+        print(dir);
+
         rb.velocity = new Vector2(Mathf.Clamp(dir.x, -moveSpeed, moveSpeed), Mathf.Clamp(dir.y, -moveSpeed, moveSpeed));
-        print(rb.velocity);
+        //print(rb.velocity);
     }
 }
