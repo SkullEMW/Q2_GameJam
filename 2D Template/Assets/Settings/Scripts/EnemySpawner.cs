@@ -32,6 +32,8 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private float eps; // enemies per second
     private bool isSpawning = false;
+    public int pathIndex = 0;
+    private int pointsIndex;
 
     private void Awake()
     {
@@ -62,6 +64,11 @@ public class EnemySpawner : MonoBehaviour
             EndWave();
         }
 
+        if (Vector2.Distance(LevelManager.main.path[pointsIndex].position, transform.position) <= 0.1f)
+        {
+            pointsIndex++;
+
+        }
     }
 
     private void EnemyDestroyed()
@@ -103,7 +110,7 @@ public class EnemySpawner : MonoBehaviour
         return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0f, enemiesPerSecondCap);
     }
 
-
+    
 
 
 }
