@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -9,15 +10,14 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
-
+    
     public int pathIndex = 0;
-
+    public Sprite Pointywalkspritesheet;
     private void Update()
     {
         if (Vector2.Distance(LevelManager.main.path[pathIndex].position, transform.position) <= 0.1f)
         {
             pathIndex++;
-
             if (pathIndex == LevelManager.main.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
@@ -25,7 +25,19 @@ public class EnemyMovement : MonoBehaviour
                 return;
             }
         }
+        if ((rb.velocity).x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
+
+
+
+
 
     private void FixedUpdate()
     {
