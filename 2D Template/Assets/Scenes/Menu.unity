@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 331695534}
   - component: {fileID: 331695536}
   - component: {fileID: 331695535}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 323, y: 105.569}
-  m_SizeDelta: {x: -518.336, y: -137.873}
+  m_AnchoredPosition: {x: 391, y: 95}
+  m_SizeDelta: {x: -636.7373, y: -87.58643}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331695535
 MonoBehaviour:
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 539048673}
   - component: {fileID: 539048672}
   - component: {fileID: 539048671}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Button (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,8 +235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.37796, y: -67.108215}
-  m_SizeDelta: {x: 140.941, y: 95.714}
+  m_AnchoredPosition: {x: 413.9668, y: -151.00952}
+  m_SizeDelta: {x: 179.50732, y: 160.8385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539048671
 MonoBehaviour:
@@ -397,7 +397,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502789983
 GameObject:
@@ -411,8 +411,8 @@ GameObject:
   - component: {fileID: 1502789986}
   - component: {fileID: 1502789985}
   - component: {fileID: 1502789984}
-  m_Layer: 5
-  m_Name: Main Menu
+  m_Layer: 1
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &1502789985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +467,7 @@ Canvas:
   m_GameObject: {fileID: 1502789983}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 2142638550}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -492,13 +492,14 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2142638551}
   - {fileID: 1873931300}
   - {fileID: 331695534}
   - {fileID: 1523748623}
   - {fileID: 539048670}
   - {fileID: 1882485859}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -517,7 +518,7 @@ GameObject:
   - component: {fileID: 1523748626}
   - component: {fileID: 1523748625}
   - component: {fileID: 1523748624}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Button (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,8 +542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.37796, y: 5.162384}
-  m_SizeDelta: {x: 140.941, y: 95.714}
+  m_AnchoredPosition: {x: 413.9668, y: -29.566406}
+  m_SizeDelta: {x: 179.50732, y: 160.8385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523748624
 MonoBehaviour:
@@ -649,7 +650,7 @@ GameObject:
   - component: {fileID: 1873931300}
   - component: {fileID: 1873931302}
   - component: {fileID: 1873931301}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +675,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 9.086975, y: 22.227943}
-  m_SizeDelta: {x: 122.66998, y: 74.44}
+  m_SizeDelta: {x: 192, y: 108}
   m_Pivot: {x: 0.51271385, y: 0.4663408}
 --- !u!114 &1873931301
 MonoBehaviour:
@@ -726,7 +727,7 @@ GameObject:
   - component: {fileID: 1882485862}
   - component: {fileID: 1882485861}
   - component: {fileID: 1882485860}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Button (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,8 +751,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 330.37796, y: -144.5407}
-  m_SizeDelta: {x: 140.941, y: 95.714}
+  m_AnchoredPosition: {x: 413.9663, y: -281.13257}
+  m_SizeDelta: {x: 179.50732, y: 160.8385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882485860
 MonoBehaviour:
@@ -916,14 +917,14 @@ Camera:
   m_GameObject: {fileID: 2142638547}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.0627451, g: 0.078431375, b: 0.0627451, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 49.454594
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -931,10 +932,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 29
+  far clip plane: 100
+  field of view: 21.032814
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 1
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -945,7 +946,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -957,11 +958,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142638547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 548.511, y: 270.0054, z: -4.8018193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1917.7391}
+  m_LocalScale: {x: 24.177898, y: 23.656914, z: 23.656914}
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1502789987}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
