@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5996490954200924011}
   - component: {fileID: -5421329667131520516}
   - component: {fileID: 2460922543600452269}
+  - component: {fileID: 9086676460860095061}
   m_Layer: 6
   m_Name: TankEnemy
   m_TagString: Enemy
@@ -141,6 +142,7 @@ MonoBehaviour:
   rb: {fileID: 5996490954200924009}
   moveSpeed: 1.25
   pathIndex: 0
+  Pointywalkspritesheet: {fileID: 0}
 --- !u!114 &-5421329667131520516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +177,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9086676460860095061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5996490954200924012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442e9df84ba91fc42a0f2aebbe156342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrder: 100
+  underwall: {fileID: 0}
