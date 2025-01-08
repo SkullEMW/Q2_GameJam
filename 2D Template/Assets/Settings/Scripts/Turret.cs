@@ -14,9 +14,12 @@ public class Turret : MonoBehaviour
 
     float inputHorizontal;
     float inputVertical;
-
+    Animation BluePlacement;
+    Animation PurplePlacement;
     bool facingRight = true;
+   
     
+
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
@@ -32,7 +35,9 @@ public class Turret : MonoBehaviour
     private List<Transform> targets = new();
     private float timeUntilFire;
     private Animator anim;
+    private Animator LaseTurret;
     public Sprite BluePlacementSpriteSheet_0;
+    public Sprite PurplePlacementSpriteSheet_0;
     private static object onDrawGizmos;
 
     // Start is called before the first frame update
@@ -40,6 +45,11 @@ public class Turret : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         timeUntilFire = 1f / bps;
+        if (anim)
+        {
+            anim.SetTrigger("Spawn");
+        }
+
     }
 
     private void Update()
