@@ -17,6 +17,9 @@ public class Kidnap : MonoBehaviour
         if (collision.gameObject.CompareTag(kidnappy))
         {
             transform.SetParent(collision.transform);
+            this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+
+            collision.GetComponent<EnemyMovement>().currentTime = 2;
         }
     }
 }
