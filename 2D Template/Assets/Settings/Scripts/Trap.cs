@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class Trap : MonoBehaviour
 {
     [Header("Attributes")]
+    Animation Chandelierspritesheet;
     public int TrapDamage = 3;
-
+    private Animator anim;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,7 @@ public class Trap : MonoBehaviour
        
         if (other.GetComponent<EnemyMovement>() != null)
         {
+            anim = GetComponent<Animator>();
             Destroy(gameObject);
         }
     }
