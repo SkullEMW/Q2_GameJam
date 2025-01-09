@@ -10,7 +10,9 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
-    
+
+    [HideInInspector] public float currentTime;
+
     public int pathIndex = 0;
     public Sprite Pointywalkspritesheet;
     private void Update()
@@ -29,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        else
+        else if ((rb.velocity).x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
@@ -46,7 +48,16 @@ public class EnemyMovement : MonoBehaviour
         Vector2 dir = (direction * moveSpeed);
         print(dir);
 
-        rb.velocity = new Vector2(Mathf.Clamp(dir.x, -moveSpeed, moveSpeed), Mathf.Clamp(dir.y, -moveSpeed, moveSpeed));
+        if (currentTime > 0)
+        {
+            currentTime -= Time.fixedDeltaTime;
+            rb.velocity = Vector2.zero;
+        }
+        else
+        {
+            rb.velocity = new Vector2(Mathf.Clamp(dir.x, -moveSpeed, moveSpeed), Mathf.Clamp(dir.y, -moveSpeed, moveSpeed));
+        }
+
         //print(rb.velocity);
     }
 }
