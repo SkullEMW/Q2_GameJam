@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5996490954200924011}
   - component: {fileID: -1057029782894622879}
   - component: {fileID: 7917715709835797282}
-  - component: {fileID: -720032407523625824}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 123135507, guid: 44852b4aefcd7294ea928a79869bde20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,8 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad684c4ea6f0dd45b9ba4be04bc66e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 6
-  currencyWorth: 10
+  hitPoints: 5
+  currencyWorth: 15
 --- !u!95 &7917715709835797282
 Animator:
   serializedVersion: 4
@@ -177,16 +176,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-720032407523625824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5996490954200924012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 442e9df84ba91fc42a0f2aebbe156342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrder: 2

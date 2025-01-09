@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804379075776250609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FiringPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6829231926767857471}
   - component: {fileID: 364318396788124067}
   - component: {fileID: 3739351995059724195}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turrets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,6 +92,7 @@ MonoBehaviour:
   rotationSpeed: 200
   bps: 1.4
   BluePlacementSpriteSheet_0: {fileID: 0}
+  PurplePlacementSpriteSheet_0: {fileID: 0}
 --- !u!212 &364318396788124067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1513101919
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 5602582, guid: a9515cb0acf6c054bb0476fc6336c6d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -174,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6829231926970560498}
   - component: {fileID: 6829231926970560499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6829231927010187363}
   - component: {fileID: 6829231927010187364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6829231927661926540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
