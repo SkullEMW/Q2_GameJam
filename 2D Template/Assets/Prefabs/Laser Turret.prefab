@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804379075776250609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FiringPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6829231926767857408}
   - component: {fileID: 6829231926767857471}
   - component: {fileID: 8017400997255510100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
   firingPoint: {fileID: 1804379075776250609}
   targetingRange: 3
   rotationSpeed: 200
-  bps: 3
+  bps: 1.5
   BluePlacementSpriteSheet_0: {fileID: 0}
   PurplePlacementSpriteSheet_0: {fileID: 0}
 --- !u!212 &8017400997255510100
@@ -154,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6829231926970560498}
   - component: {fileID: 6829231926970560499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6829231927010187363}
   - component: {fileID: 6829231927010187364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6829231927661926540}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RotatePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
