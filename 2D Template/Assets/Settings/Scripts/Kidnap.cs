@@ -39,7 +39,7 @@ public class Kidnap : MonoBehaviour
             collision.GetComponent<EnemyMovement>().currentTime = 2;
             childrenSafe = childCount - 1;
             collision.gameObject.GetComponent<EnemyMovement>().grabbed = true;
-            collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
+            // collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
         }
        
        
