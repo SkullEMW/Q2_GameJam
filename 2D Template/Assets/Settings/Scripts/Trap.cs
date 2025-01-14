@@ -17,8 +17,15 @@ public class Trap : MonoBehaviour
         if (other.GetComponent<EnemyMovement>() != null)
         {
             anim = GetComponent<Animator>();
-            anim.SetTrigger("Triggered");
+            
             Destroy(gameObject);
         }
+    }
+
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        anim.SetTrigger("Triggered");
+
     }
 }
