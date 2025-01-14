@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7917715709835797282}
   m_Layer: 6
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5996490954200924009}
   moveSpeed: 2
+  currentTime: 0
   pathIndex: 0
   Pointywalkspritesheet: {fileID: 0}
 --- !u!114 &-1057029782894622879
