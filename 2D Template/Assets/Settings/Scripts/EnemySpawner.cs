@@ -10,11 +10,12 @@ public class EnemySpawner : MonoBehaviour
     float inputHorizontal;
     float inputVertical;
 
-    bool facingRight = true;
+    
 
 
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
+    
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
@@ -96,9 +97,12 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemy()
     {
         int index = Random.Range(0, enemyPrefabs.Length);
+
         GameObject prefabToSpawn = enemyPrefabs[index];
         Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
     }
+
+
 
     private int EnemiesPerWave()
     {
