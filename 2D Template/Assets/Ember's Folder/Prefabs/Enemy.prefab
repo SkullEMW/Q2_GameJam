@@ -140,8 +140,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5996490954200924009}
   moveSpeed: 2
+  currentTime: 0
   pathIndex: 0
   Pointywalkspritesheet: {fileID: 0}
+  grabbed: 0
+  beingDestroyed: 0
+  Child: {fileID: 0}
 --- !u!114 &-1057029782894622879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +170,7 @@ Animator:
   m_GameObject: {fileID: 5996490954200924012}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3de5f7a9298e196488b8a9c075e9ea04, type: 2}
+  m_Controller: {fileID: 9100000, guid: aed4aebb0af09254c82aadc23ed7c1c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

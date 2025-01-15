@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using static UnityEngine.GraphicsBuffer;
 
 public class EnemyMovement : MonoBehaviour
@@ -15,15 +17,24 @@ public class EnemyMovement : MonoBehaviour
 
     public int pathIndex = 0;
     public Sprite Pointywalkspritesheet;
+    public bool grabbed;
+    public GameObject Child;
+    public GameObject thisThing;
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+                Child.transform.parent = null;
+                System.Threading.Thread.Sleep(1);
+                Destroy(thisThing.gameObject);
+            
+        }
         if (Vector2.Distance(LevelManager.main.path[pathIndex].position, transform.position) <= 0.1f)
         {
             pathIndex++;
             if (pathIndex == LevelManager.main.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
-                Destroy(gameObject);
                 return;
             }
         }
@@ -58,6 +69,5 @@ public class EnemyMovement : MonoBehaviour
             rb.velocity = new Vector2(Mathf.Clamp(dir.x, -moveSpeed, moveSpeed), Mathf.Clamp(dir.y, -moveSpeed, moveSpeed));
         }
 
-        //print(rb.velocity);
     }
 }

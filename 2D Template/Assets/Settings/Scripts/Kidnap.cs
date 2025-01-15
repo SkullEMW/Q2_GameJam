@@ -10,7 +10,8 @@ public class Kidnap : MonoBehaviour
 {
     public GameObject child;
     public GameObject TankEnemy;
-
+    public Vector2 respawnLocation;
+    public float respawnTime;
     public Transform parent;
 
     public int childCount;
@@ -20,7 +21,6 @@ public class Kidnap : MonoBehaviour
     public string kidnappy;
 
     Vector3 ChildPos;
-   
 
     private void Start()
     {
@@ -31,32 +31,34 @@ public class Kidnap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(kidnappy))
+        if (collision.gameObject.CompareTag(kidnappy) && collision.gameObject.GetComponent<EnemyMovement>().grabbed == false)
         {
+            respawnLocation = parent.gameObject.transform.position;
             transform.SetParent(collision.transform);
             this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
-
             collision.GetComponent<EnemyMovement>().currentTime = 2;
-
             childrenSafe = childCount - 1;
-
-            if TanEnemy = T
-            {
-                
-            }
-            
-
+            collision.gameObject.GetComponent<EnemyMovement>().grabbed = true;
+           collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
         }
        
        
     }
+    
     private void Update()
     {
+        if (transform.parent = null)
+        {
+            StartCoroutine(RespawnThisThing());
+        }
         if (childCount == 0)
         {
             SceneManager.LoadScene("GameOver");
         }
     }
-
-    
+    public IEnumerator RespawnThisThing()
+    {
+        yield return new WaitForSeconds(respawnTime);
+        this.transform.position = respawnLocation;
+    }
 }
