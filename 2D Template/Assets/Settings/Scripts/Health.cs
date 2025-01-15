@@ -9,7 +9,9 @@ public class Health : MonoBehaviour
     [SerializeField] private int currencyWorth = 15;
     
     private bool isDestroyed = false;
-
+    public GameObject Child;
+    public GameObject thisThing;
+    public static bool isDead;
     public void TakeDamage(int dmg)
     {
         hitPoints -= dmg;
@@ -20,6 +22,9 @@ public class Health : MonoBehaviour
             LevelManager.main.IncreaseCurrency(currencyWorth);
             isDestroyed = true;
             Destroy(gameObject);
+           
+
+
         }
 
     }

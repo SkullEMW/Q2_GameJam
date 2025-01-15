@@ -139,12 +139,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5996490954200924009}
-  moveSpeed: 9
+  moveSpeed: 1.25
   currentTime: 0
   pathIndex: 0
   Pointywalkspritesheet: {fileID: 0}
   grabbed: 0
-  beingDestroyed: 0
   Child: {fileID: 0}
   thisThing: {fileID: 5996490954200924012}
 --- !u!114 &-5421329667131520516
