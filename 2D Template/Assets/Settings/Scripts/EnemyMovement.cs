@@ -10,6 +10,8 @@ public class EnemyMovement : MonoBehaviour
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
+    public int trigger;
+
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
 
