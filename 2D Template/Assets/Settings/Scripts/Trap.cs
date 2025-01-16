@@ -25,9 +25,9 @@ public class Trap : MonoBehaviour
 
    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<Enemy>() != null)
+        if (collision.GetComponent<EnemyMovement>() != null)
         {
-            collision.GetComponent<Enemy>().trigger++;
+            collision.GetComponent<EnemyMovement>().trigger++;
         }
 
     }
