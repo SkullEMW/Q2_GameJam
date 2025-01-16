@@ -43,11 +43,8 @@ public class Kidnap : MonoBehaviour
             collision.GetComponent<EnemyMovement>().currentTime = 2;
             childrenSafe = childCount - 1;
             collision.gameObject.GetComponent<EnemyMovement>().grabbed = true;
-<<<<<<< HEAD
-            // collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
-=======
+            //collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
             collision.gameObject.GetComponent<EnemyMovement>().Child = this.gameObject;
->>>>>>> bc04b3afaca3cb07a76e5dc5348c846e75064914
         }
        
        
@@ -55,9 +52,9 @@ public class Kidnap : MonoBehaviour
     
     private void Update()
     {
-        if (transform.parent == null && EnemyMovement.isDead == true)
+        if (transform.parent == null)// && EnemyMovement.isDead == true)
         {
-            StartCoroutine(RespawnThisThing());
+            //StartCoroutine(RespawnThisThing());
             
         }
         if (childCount == 0)
@@ -65,12 +62,9 @@ public class Kidnap : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-    public IEnumerator RespawnThisThing()
-    {
-        
-        
-        yield return new WaitForSeconds(5);
-        this.transform.position = respawnLocation;
-        Debug.Log("RIGHT HERE");
-    }
+    //public IEnumerator RespawnThisThing()
+    //{
+    //    child.transform.SetParent(null);
+    //    Debug.Log("RIGHT HERE");
+    //}
 }

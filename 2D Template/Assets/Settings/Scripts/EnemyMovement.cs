@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     public bool grabbed;
     public GameObject Child;
     public GameObject thisThing;
-    public static bool isDead;
+    public bool isDead;
 
     
     private void Update()
@@ -48,7 +48,10 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
-
+    private void OnDestroy()
+    {
+        transform.GetChild(0)?.SetParent(null);
+    }
 
 
     private void FixedUpdate()
