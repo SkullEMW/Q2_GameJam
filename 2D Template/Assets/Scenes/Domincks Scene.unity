@@ -10144,7 +10144,7 @@ MonoBehaviour:
   - {fileID: 1104470882}
   - {fileID: 254633449}
   - {fileID: 1189164645}
-  currency: 100
+  currency: 100000
 --- !u!4 &200147641
 Transform:
   m_ObjectHideFlags: 0

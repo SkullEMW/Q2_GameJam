@@ -10,6 +10,8 @@ public class EnemyMovement : MonoBehaviour
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
+    public int trigger;
+
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
 
@@ -20,15 +22,12 @@ public class EnemyMovement : MonoBehaviour
     public bool grabbed;
     public GameObject Child;
     public GameObject thisThing;
+    public static bool isDead;
+
+    
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-                Child.transform.parent = null;
-                System.Threading.Thread.Sleep(1);
-                Destroy(thisThing.gameObject);
-            
-        }
+       
         if (Vector2.Distance(LevelManager.main.path[pathIndex].position, transform.position) <= 0.1f)
         {
             pathIndex++;
@@ -57,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = ((Vector2)LevelManager.main.path[pathIndex].position - (Vector2)transform.position).normalized;
 
         Vector2 dir = (direction * moveSpeed);
-        print(dir);
+        //print(dir);
 
         if (currentTime > 0)
         {

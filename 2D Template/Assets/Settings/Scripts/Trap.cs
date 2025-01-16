@@ -23,9 +23,12 @@ public class Trap : MonoBehaviour
     }
 
 
-    void OnTriggerExit2D(Collider2D collision)
+   private void OnTriggerExit2D(Collider2D collision)
     {
-        anim.SetTrigger("Triggered");
+        if (collision.GetComponent<Enemy>() != null)
+        {
+            collision.GetComponent<Enemy>().trigger++;
+        }
 
     }
 }

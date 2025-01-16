@@ -11,7 +11,7 @@ public class Kidnap : MonoBehaviour
     public GameObject child;
     public GameObject TankEnemy;
     public Vector2 respawnLocation;
-    public float respawnTime;
+    public float respawnTime = 5;
     public Transform parent;
 
     public int childCount;
@@ -22,8 +22,12 @@ public class Kidnap : MonoBehaviour
 
     Vector3 ChildPos;
 
+
+
+    
     private void Start()
     {
+        respawnLocation = transform.position;
         ChildPos = transform.position;
         Count = 0;
         childCount = 5;
@@ -33,13 +37,17 @@ public class Kidnap : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(kidnappy) && collision.gameObject.GetComponent<EnemyMovement>().grabbed == false)
         {
-            respawnLocation = parent.gameObject.transform.position;
+            
             transform.SetParent(collision.transform);
             this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
             collision.GetComponent<EnemyMovement>().currentTime = 2;
             childrenSafe = childCount - 1;
             collision.gameObject.GetComponent<EnemyMovement>().grabbed = true;
+<<<<<<< HEAD
             // collision.gameObject.GetComponent<EnemyMovement>().Child = this.transform;
+=======
+            collision.gameObject.GetComponent<EnemyMovement>().Child = this.gameObject;
+>>>>>>> bc04b3afaca3cb07a76e5dc5348c846e75064914
         }
        
        
@@ -47,9 +55,10 @@ public class Kidnap : MonoBehaviour
     
     private void Update()
     {
-        if (transform.parent = null)
+        if (transform.parent == null && EnemyMovement.isDead == true)
         {
             StartCoroutine(RespawnThisThing());
+            
         }
         if (childCount == 0)
         {
@@ -58,7 +67,10 @@ public class Kidnap : MonoBehaviour
     }
     public IEnumerator RespawnThisThing()
     {
-        yield return new WaitForSeconds(respawnTime);
+        
+        
+        yield return new WaitForSeconds(5);
         this.transform.position = respawnLocation;
+        Debug.Log("RIGHT HERE");
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -11,6 +12,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float bulletSpeed = 5f;
     public int bulletDamage = 1;
     private Transform target;
+   
 
     public void SetTarget(Transform _target)
     {
@@ -28,5 +30,6 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
+        
     }
 }
