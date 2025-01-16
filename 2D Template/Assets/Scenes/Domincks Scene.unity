@@ -10144,7 +10144,7 @@ MonoBehaviour:
   - {fileID: 1104470882}
   - {fileID: 254633449}
   - {fileID: 1189164645}
-  currency: 100
+  currency: 100000
 --- !u!4 &200147641
 Transform:
   m_ObjectHideFlags: 0
@@ -13184,6 +13184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 374636338}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 0
   parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   childCount: 0
   kidnappy: Enemy
@@ -15419,6 +15422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 522517364}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
   parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   childCount: 5
   kidnappy: Enemy
@@ -15517,7 +15523,7 @@ Transform:
   - {fileID: 2083407663}
   - {fileID: 374636339}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &522750701
 PrefabInstance:
@@ -16275,8 +16281,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090215701}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1778640852}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18077,7 +18083,7 @@ Transform:
   - {fileID: 1913457946}
   - {fileID: 1644596016}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &616387141 stripped
 Transform:
@@ -20741,6 +20747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 749076518}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 0
   parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   childCount: 0
   kidnappy: Enemy
@@ -31549,7 +31558,7 @@ Transform:
   - {fileID: 1263219887}
   - {fileID: 2086786076}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1201229788
 GameObject:
@@ -33640,7 +33649,7 @@ Transform:
   - {fileID: 920492251}
   - {fileID: 2113524140}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273364099
 GameObject:
@@ -34495,7 +34504,7 @@ Transform:
   - {fileID: 1966816799}
   - {fileID: 639406896}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1321834389 stripped
 Transform:
@@ -35013,7 +35022,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359242776
 GameObject:
@@ -41226,7 +41235,7 @@ Transform:
   - {fileID: 1443469597}
   - {fileID: 971506535}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1688801620
 PrefabInstance:
@@ -42633,6 +42642,7 @@ Transform:
   - {fileID: 1405767122}
   - {fileID: 864499074}
   - {fileID: 1988252628}
+  - {fileID: 548471450}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48660,6 +48670,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 2083407662}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 0
   parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   childCount: 0
   kidnappy: Enemy
@@ -49795,6 +49808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 2129006026}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 0
   parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
   childCount: 0
   kidnappy: Enemy

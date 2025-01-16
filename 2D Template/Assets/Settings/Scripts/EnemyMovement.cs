@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using static UnityEngine.GraphicsBuffer;
 
 public class EnemyMovement : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
+
+    public int trigger;
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
@@ -17,18 +20,20 @@ public class EnemyMovement : MonoBehaviour
     public int pathIndex = 0;
     public Sprite Pointywalkspritesheet;
     public bool grabbed;
-    public bool beingDestroyed = false;
+    public GameObject Child;
+    public GameObject thisThing;
+    public static bool isDead;
+
+    
     private void Update()
     {
+       
         if (Vector2.Distance(LevelManager.main.path[pathIndex].position, transform.position) <= 0.1f)
         {
             pathIndex++;
             if (pathIndex == LevelManager.main.path.Length)
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
-                beingDestroyed = true;
-                System.Threading.Thread.Sleep(100);
-                Destroy(this.gameObject);
                 return;
             }
         }
@@ -51,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = ((Vector2)LevelManager.main.path[pathIndex].position - (Vector2)transform.position).normalized;
 
         Vector2 dir = (direction * moveSpeed);
-        print(dir);
+        //print(dir);
 
         if (currentTime > 0)
         {

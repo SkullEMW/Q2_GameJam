@@ -143,6 +143,9 @@ MonoBehaviour:
   currentTime: 0
   pathIndex: 0
   Pointywalkspritesheet: {fileID: 0}
+  grabbed: 0
+  Child: {fileID: 0}
+  thisThing: {fileID: 5996490954200924012}
 --- !u!114 &-5421329667131520516
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class Credit : MonoBehaviour
 
     public void DominickCredits()
     {
-        SceneManager.LoadScene("DominckCredit");
+        SceneManager.LoadScene("DominickCredit");
     }
 
     public void Back()
