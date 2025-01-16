@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,22 +14,14 @@ public class Trap : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         other.gameObject.GetComponent<Health>().TakeDamage(TrapDamage);
-       
+
         if (other.GetComponent<EnemyMovement>() != null)
         {
             anim = GetComponent<Animator>();
-            
-            Destroy(gameObject);
+            anim.SetTrigger("Triggered");
+            Destroy(gameObject,1);
         }
     }
 
-
-   private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.GetComponent<Enemy>() != null)
-        {
-            collision.GetComponent<Enemy>().trigger++;
-        }
-
-    }
+    
 }
