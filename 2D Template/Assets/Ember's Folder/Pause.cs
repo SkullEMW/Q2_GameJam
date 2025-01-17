@@ -11,10 +11,7 @@ public class Pause : MonoBehaviour
     public GameObject Shop; 
 
     public bool isPaused;
-    void Start()
-    {
-        PauseMenu.SetActive(false);
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -23,11 +20,11 @@ public class Pause : MonoBehaviour
         {
             if (isPaused)
             {
-                ResumeGame();
+               PauseGame();
             }
             else
             {
-                PauseGame();
+                ResumeGame();
             }
            
         }
@@ -54,10 +51,7 @@ public class Pause : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
 
-        void Exit()
-        {
-            Application.Quit();
-        }
+        
     }
 }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -69,6 +70,11 @@ public class EnemySpawner : MonoBehaviour
         {
             pointsIndex++;
 
+        }
+
+        if (currentWave > 5)
+        {
+            SceneManager.LoadScene("GameWin");
         }
     }
 
