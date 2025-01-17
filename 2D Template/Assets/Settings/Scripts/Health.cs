@@ -22,7 +22,6 @@ public class Health : MonoBehaviour
             LevelManager.main.IncreaseCurrency(currencyWorth);
             isDestroyed = true;
             Destroy(gameObject);
-           
 
 
         }
@@ -36,4 +35,10 @@ public class Health : MonoBehaviour
             TakeDamage(bullet.GetComponent<Bullet>().bulletDamage);
         }
     }
+    /*public IEnumerator Death()
+    {
+        Child.transform.SetParent(null);
+        yield return new WaitForSeconds(1);
+        Destroy(this);
+    }*/
 }
