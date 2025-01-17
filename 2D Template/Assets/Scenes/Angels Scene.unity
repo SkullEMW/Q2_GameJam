@@ -8298,6 +8298,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 561347848}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
+  parent: {fileID: 0}
+  childCount: 0
+  kidnappy: 
 --- !u!61 &561347852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8315,7 +8322,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9925,7 +9932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901544412562389500, guid: c78fb6e417b82cc4e9eec60d1eb685a3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7901544412562389500, guid: c78fb6e417b82cc4e9eec60d1eb685a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19423,7 +19430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7901544412562389500, guid: c78fb6e417b82cc4e9eec60d1eb685a3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7901544412562389500, guid: c78fb6e417b82cc4e9eec60d1eb685a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24872,7 +24879,7 @@ Transform:
   - {fileID: 519738564}
   - {fileID: 1774846}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280416917
 GameObject:
@@ -24903,7 +24910,7 @@ Transform:
   m_GameObject: {fileID: 1280416917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 43.171, y: 50.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.115942, y: 7.878636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1456058533}
@@ -24941,6 +24948,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 1280416917}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
+  parent: {fileID: 0}
+  childCount: 0
+  kidnappy: 
 --- !u!61 &1280416921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25007,7 +25021,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 467
   m_Sprite: {fileID: 7482667652216324306, guid: 707daf08fa251d246a12744488cf3889, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26722,7 +26736,7 @@ Transform:
   m_GameObject: {fileID: 1385204811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.207, y: 51.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.115942, y: 7.878636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1456058533}
@@ -26760,6 +26774,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 1385204811}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
+  parent: {fileID: 0}
+  childCount: 0
+  kidnappy: 
 --- !u!61 &1385204815
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26826,7 +26847,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 467
   m_Sprite: {fileID: 7482667652216324306, guid: 707daf08fa251d246a12744488cf3889, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -27836,6 +27857,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 0}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
+  parent: {fileID: 0}
+  childCount: 0
+  kidnappy: 
 --- !u!61 &1456058531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27931,7 +27959,7 @@ Transform:
   - {fileID: 1385204812}
   - {fileID: 561347849}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1460040300
 GameObject:
@@ -27962,7 +27990,7 @@ Transform:
   m_GameObject: {fileID: 1460040300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.08, y: -75.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.115942, y: 7.878636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1456058533}
@@ -28000,6 +28028,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 1460040300}
+  TankEnemy: {fileID: 0}
+  respawnLocation: {x: 0, y: 0}
+  respawnTime: 5
+  parent: {fileID: 0}
+  childCount: 0
+  kidnappy: 
 --- !u!61 &1460040304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28066,7 +28101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 46
   m_Sprite: {fileID: 7482667652216324306, guid: 707daf08fa251d246a12744488cf3889, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -30939,7 +30974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1598590036
 Camera:
   m_ObjectHideFlags: 0
@@ -40784,7 +40819,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
       propertyPath: m_LocalPosition.x

@@ -23,9 +23,7 @@ public class Trap : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-    
-=======
+
 
    private void OnTriggerExit2D(Collider2D collision)
     {
@@ -35,5 +33,5 @@ public class Trap : MonoBehaviour
         }
 
     }
->>>>>>> 6850f33d4dc94a65c97cf1effb39efc63d196614
+
 }
