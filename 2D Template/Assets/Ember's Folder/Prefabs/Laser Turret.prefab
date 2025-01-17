@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6829231926767857408}
   - component: {fileID: 6829231926767857471}
   - component: {fileID: 8017400997255510100}
+  - component: {fileID: 4303485673064489527}
   m_Layer: 6
   m_Name: Laser Turret
   m_TagString: Untagged
@@ -144,6 +145,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4303485673064489527
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6829231926767857470}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8da969997f7d973498acb610755d7911, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6829231926970560497
 GameObject:
   m_ObjectHideFlags: 0
