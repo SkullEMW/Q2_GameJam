@@ -10144,7 +10144,7 @@ MonoBehaviour:
   - {fileID: 1104470882}
   - {fileID: 254633449}
   - {fileID: 1189164645}
-  currency: 100000
+  currency: 100
 --- !u!4 &200147641
 Transform:
   m_ObjectHideFlags: 0
@@ -10178,7 +10178,7 @@ MonoBehaviour:
     prefab: {fileID: 6829231926767857470, guid: be3fae28b91ed86498d39df40a0573a4, type: 3}
   - name: Sniper Turret
     cost: 150
-    prefab: {fileID: 6829231926767857470, guid: cab814d67f33fb148b469888bf2e3d5c, type: 3}
+    prefab: {fileID: 4308670923345267219, guid: 38cf5426131a4db41a40c961ac1e0f53, type: 3}
   - name: Laser Turret
     cost: 1000
     prefab: {fileID: 6829231926767857470, guid: c271d90a72659b74d83a9d9052fdaabc, type: 3}
@@ -13165,8 +13165,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374636338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.198, y: -49.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.198, y: -50.043, z: 0}
+  m_LocalScale: {x: 1, y: 1.726, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 522517368}
@@ -13188,7 +13188,7 @@ MonoBehaviour:
   TankEnemy: {fileID: 0}
   respawnLocation: {x: 0, y: 0}
   respawnTime: 0
-  parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
+  parent: {fileID: 0}
   childCount: 0
   kidnappy: Enemy
 --- !u!61 &374636341
@@ -15422,7 +15422,6 @@ GameObject:
   - component: {fileID: 522517368}
   - component: {fileID: 522517367}
   - component: {fileID: 522517366}
-  - component: {fileID: 522517365}
   m_Layer: 0
   m_Name: Children
   m_TagString: Untagged
@@ -15430,25 +15429,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &522517365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522517364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081763674f3577c4cb6e75e7e2586664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  child: {fileID: 522517364}
-  TankEnemy: {fileID: 0}
-  respawnLocation: {x: 0, y: 0}
-  respawnTime: 5
-  parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
-  childCount: 5
-  kidnappy: Enemy
 --- !u!61 &522517366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15535,8 +15515,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522517364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.48, y: 0.211, z: 0}
-  m_LocalScale: {x: 0.3684, y: 0.10056674, z: 1}
+  m_LocalPosition: {x: 35.48, y: 0.2772, z: 0}
+  m_LocalScale: {x: 0.3684, y: 0.23290391, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2129006027}
@@ -20749,8 +20729,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749076518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -67.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: -67.412, z: 0}
+  m_LocalScale: {x: 1, y: 1.635, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 522517368}
@@ -20772,7 +20752,7 @@ MonoBehaviour:
   TankEnemy: {fileID: 0}
   respawnLocation: {x: 0, y: 0}
   respawnTime: 0
-  parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
+  parent: {fileID: 0}
   childCount: 0
   kidnappy: Enemy
 --- !u!61 &749076521
@@ -21081,141 +21061,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7402392960963155861, guid: 537c0a6a5ac855d45987b1fb730de543, type: 3}
   m_PrefabInstance: {fileID: 1500860058}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &784065766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784065767}
-  - component: {fileID: 784065769}
-  - component: {fileID: 784065768}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &784065767
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784065766}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1676009395}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &784065768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784065766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Trap: 50'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &784065769
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784065766}
-  m_CullTransparentMesh: 1
 --- !u!4 &791576227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7402392960963155861, guid: 537c0a6a5ac855d45987b1fb730de543, type: 3}
@@ -26851,7 +26696,6 @@ RectTransform:
   - {fileID: 776423308}
   - {fileID: 473917476}
   - {fileID: 593902818}
-  - {fileID: 1676009395}
   m_Father: {fileID: 1090215701}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41244,140 +41088,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7402392960963155861, guid: 537c0a6a5ac855d45987b1fb730de543, type: 3}
   m_PrefabInstance: {fileID: 20531734}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1676009394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1676009395}
-  - component: {fileID: 1676009398}
-  - component: {fileID: 1676009397}
-  - component: {fileID: 1676009396}
-  m_Layer: 5
-  m_Name: Trap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1676009395
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676009394}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 784065767}
-  m_Father: {fileID: 1004143618}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1676009396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676009394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1676009397}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 200147642}
-        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: SetSelectedTower
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1676009397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676009394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1676009398
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676009394}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1680157722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48986,7 +48696,7 @@ MonoBehaviour:
   TankEnemy: {fileID: 0}
   respawnLocation: {x: 0, y: 0}
   respawnTime: 0
-  parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
+  parent: {fileID: 0}
   childCount: 0
   kidnappy: Enemy
 --- !u!61 &2083407665
@@ -50145,7 +49855,7 @@ MonoBehaviour:
   TankEnemy: {fileID: 0}
   respawnLocation: {x: 0, y: 0}
   respawnTime: 0
-  parent: {fileID: 5996490954200924010, guid: 07bfaf48ef621144aa058f0eb8e566eb, type: 3}
+  parent: {fileID: 0}
   childCount: 0
   kidnappy: Enemy
 --- !u!61 &2129006029

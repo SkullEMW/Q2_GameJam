@@ -50,7 +50,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        transform.GetChild(0)?.gameObject.SetActive(true);
+       //transform.GetChild(0)?.gameObject.SetActive(true);
        transform.GetChild(0)?.SetParent(null);
     }
 
