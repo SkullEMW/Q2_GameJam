@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Xml.XPath;
 using UnityEngine;
 
-public class NextButton : MonoBehaviour
+public class ChloeNext : MonoBehaviour
 {
     public GameObject ChloeCreditP1;
     public GameObject ChloeCreditP2;

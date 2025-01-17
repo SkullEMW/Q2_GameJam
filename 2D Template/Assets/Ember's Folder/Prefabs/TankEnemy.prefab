@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5996490954200924009}
+  trigger: 0
   moveSpeed: 1.25
   currentTime: 0
   pathIndex: 0
@@ -146,6 +147,7 @@ MonoBehaviour:
   grabbed: 0
   Child: {fileID: 0}
   thisThing: {fileID: 5996490954200924012}
+  isDead: 0
 --- !u!114 &-5421329667131520516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,8 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad684c4ea6f0dd45b9ba4be04bc66e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 8
+  hitPoints: 25
   currencyWorth: 25
+  Child: {fileID: 0}
+  thisThing: {fileID: 0}
 --- !u!95 &2460922543600452269
 Animator:
   serializedVersion: 4
